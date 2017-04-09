@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.logan20.draganddropgame.PlayActivity"
+    android:background="@drawable/background"
+    android:id="@+id/bkg_panel"
+    android:orientation="vertical"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:baselineAligned="false">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#88ffffff"
+            android:id="@+id/hsv_panel">
+
+            <LinearLayout
+                android:id="@+id/viewPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="#88ffffff"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/play"
+            android:onClick="checkSol"
+            android:contentDescription="@string/app_name"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#88ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <com.logan20.draganddropgame.Item
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/arrow_up"
+                android:tag="up"
+                android:id="@+id/arrow_up"
+                android:layout_margin="8dp"/>
+
+            <com.logan20.draganddropgame.Item
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:tag="down"
+                android:background="@drawable/arrow_down"
+                android:id="@+id/arrow_down"/>
+
+
+            <com.logan20.draganddropgame.Item
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:tag="left"
+                android:background="@drawable/arrow_left"
+                android:id="@+id/arrow_left"/>
+
+            <com.logan20.draganddropgame.Item
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:tag="right"
+                android:background="@drawable/arrow_right"
+                android:id="@+id/arrow_right"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/mainPanel" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.logan20.draganddropgame.ParentViewStatistics"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_fName"
+        android:hint="First Name"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/main_buton"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_lName"
+        android:background="@drawable/main_buton"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Last Name"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_email"
+        android:background="@drawable/main_buton"
+        android:layout_margin="10dp"
+        android:inputType=""
+        android:padding="10dp"
+        android:hint="Email"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/main_buton"
+        android:onClick="search"
+        android:text="Search" />
+
+</LinearLayout>
